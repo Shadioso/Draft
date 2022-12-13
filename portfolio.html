@@ -26,39 +26,114 @@
         <a class="logo page-header__logo" href="/"
           ><span class="logo-text page-header__logo-text">Web</span>Studio</a
         >
-        <nav class="navigation page-header__navigation">
-          <ul class="header-nav">
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="index.html">Студія</a>
+        <div class="page-header__container">
+          <nav class="navigation page-header__navigation">
+            <ul class="header-nav">
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="index.html">Студія</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link current" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="/">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header-contact contact">
+            <li class="header-contact__item">
+              <a class="header-contact__link" href="mailto:info@devstudio.com">
+                <svg class="header-contact__icon" width="16" height="12">
+                  <use href="./images/img.p1/icon.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link current" href="./portfolio.html"
+            <li class="header-contact__item">
+              <a class="header-contact__link" href="tel:+380961111111">
+                <svg class="header-contact__icon" width="10" height="16">
+                  <use href="./images/img.p1/icon.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button
+          type="button"
+          class="page-header__menu-button is-open data-menu-button"
+          aria-expanded="true"
+          aria-controls="mobile-menu__container"
+          data-menu-button
+          aria-label="/"
+          id="/"
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобільного меню"
+          >
+            <use
+              class="page-header__icon-menu"
+              href="./images/img.p1/icon.svg#icon-menu-header"
+            ></use>
+            <use
+              class="page-header__icon-cross"
+              href="./images/img.p1/icon.svg#icon-close-header"
+            ></use>
+          </svg>
+        </button>
+        <div
+          class="page-header__mobile-menu is-open"
+          id="mobile-menu__container"
+          data-menu
+        >
+          <ul class="header-nav-mobile">
+            <li class="header-nav-mobile__item">
+              <a class="header-nav-mobile__link" href="index.html">Студія</a>
+            </li>
+            <li class="header-nav-mobile__item">
+              <a class="header-nav-mobile__link current" href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="/">Контакти</a>
+            <li class="header-nav-mobile__item">
+              <a class="header-nav-mobile__link" href="/">Контакти</a>
             </li>
           </ul>
-        </nav>
-        <ul class="header-contact contact">
-          <li class="header-contact__item">
-            <a class="header-contact__link" href="mailto:info@devstudio.com">
-              <svg class="header-contact__icon" width="16" height="12">
-                <use href="./images/img.p1/icon.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contact__item">
-            <a class="header-contact__link" href="tel:+380961111111">
-              <svg class="header-contact__icon" width="10" height="16">
-                <use href="./images/img.p1/icon.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="header-contact-mobile">
+            <li class="header-contact-mobile__item">
+              <a
+                class="header-contact-mobile__link number"
+                href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="header-contact-mobile__item">
+              <a
+                class="header-contact-mobile__link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="/">Instagram</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="/">Twitter</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="/">Facebook</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="/">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -99,7 +174,7 @@
                   <img
                     src="images/img.p2/hm2.jpg"
                     alt="ноутбук"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="project-list__project-overflow">
@@ -123,7 +198,7 @@
                   <img
                     src="images/img.p2/hm2(4).jpg"
                     alt="баскетболісти"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="project-list__project-overflow">
@@ -149,7 +224,7 @@
                   <img
                     src="images/img.p2/hm2(3).jpg"
                     alt="логотип ресторану"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="project-list__project-overflow">
@@ -173,7 +248,7 @@
                   <img
                     src="images/img.p2/hm2(10).jpg"
                     alt="навушники"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="project-list__project-overflow">
@@ -197,7 +272,7 @@
                   <img
                     src="images/img.p2/hm2(9).jpg"
                     alt="дві коробочки"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="project-list__project-overflow">
@@ -221,7 +296,7 @@
                   <img
                     src="images/img.p2/hm2(8).jpg"
                     alt="монітор комп'ютера"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="project-list__project-overflow">
@@ -245,7 +320,7 @@
                   <img
                     src="images/img.p2/hm2(7).jpg"
                     alt="книжка"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="project-list__project-overflow">
@@ -269,7 +344,7 @@
                   <img
                     src="images/img.p2/hm2(6).jpg"
                     alt="ярлик"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="project-list__project-overflow">
@@ -294,7 +369,7 @@
                   <img
                     src="images/img.p2/hm2(5).jpg"
                     alt="робота з ноутбуком"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="project-list__project-overflow">
@@ -318,67 +393,69 @@
     </main>
     <footer class="section-footer">
       <div class="container footer">
-        <div class="footer-block">
-          <a class="logo footer__logo-text" href="/"
-            ><span class="logo-text">Web</span>Studio</a
-          >
-          <address>
-            <ul class="adress-list">
-              <li class="adress-list__item">
-                <a
-                  href="https://goo.gl/maps/8h4WojvM9errue7C8"
-                  target="_blank"
-                  class="adress-list__point"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="footer__flex-box">
+          <div class="footer-block">
+            <a class="logo footer__logo-text" href="/"
+              ><span class="logo-text">Web</span>Studio</a
+            >
+            <address>
+              <ul class="adress-list">
+                <li class="adress-list__item">
+                  <a
+                    href="https://goo.gl/maps/8h4WojvM9errue7C8"
+                    target="_blank"
+                    class="adress-list__point"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="adress-list__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="adres-list__communication"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="adress-list__item">
+                  <a href="tel:+380961111111" class="adres-list__communication"
+                    >+38 096 111 11 11></a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join">
+            <strong class="join__tittle"> приєднуйтесь</strong>
+            <ul class="join-list">
+              <li class="join-list__item">
+                <a href="/" class="team-contact__link">
+                  <svg class="join-list__svg-icon">
+                    <use href="./images/img.p1/icon.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="adress-list__item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="adres-list__communication"
-                  >info@devstudio.com</a
-                >
+              <li class="join-list__item">
+                <a href="/" class="team-contact__link">
+                  <svg class="join-list__svg-icon">
+                    <use href="./images/img.p1/icon.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="adress-list__item">
-                <a href="tel:+380961111111" class="adres-list__communication"
-                  >+38 096 111 11 11></a
-                >
+              <li class="join-list__item">
+                <a href="/" class="team-contact__link">
+                  <svg class="join-list__svg-icon">
+                    <use href="./images/img.p1/icon.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-list__item">
+                <a href="/" class="team-contact__link">
+                  <svg class="join-list__svg-icon">
+                    <use href="./images/img.p1/icon.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="join">
-          <strong class="join__tittle"> приєднуйтесь</strong>
-          <ul class="join-list">
-            <li class="join-list__item">
-              <a href="/" class="team-contact__link">
-                <svg class="join-list__svg-icon">
-                  <use href="./images/img.p1/icon.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a href="/" class="team-contact__link">
-                <svg class="join-list__svg-icon">
-                  <use href="./images/img.p1/icon.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a href="/" class="team-contact__link">
-                <svg class="join-list__svg-icon">
-                  <use href="./images/img.p1/icon.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a href="/" class="team-contact__link">
-                <svg class="join-list__svg-icon">
-                  <use href="./images/img.p1/icon.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <form class="subscribe">
@@ -402,4 +479,5 @@
       </div>
     </footer>
   </body>
+  <script src="./JS/mobile-menu.js"></script>
 </html>
