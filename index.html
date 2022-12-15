@@ -63,7 +63,7 @@
         </div>
         <button
           type="button"
-          class="page-header__menu-button is-open data-menu-button"
+          class="page-header__menu-button data-menu-button"
           aria-expanded="true"
           aria-controls="mobile-menu__container"
           data-menu-button
@@ -86,55 +86,58 @@
           </svg>
         </button>
         <div
-          class="page-header__mobile-menu is-open"
+          class="page-header__mobile-menu"
           id="mobile-menu__container"
           data-menu
         >
-          <ul class="header-nav-mobile">
-            <li class="header-nav-mobile__item">
-              <a class="header-nav-mobile__link current" href="index.html"
-                >Студія</a
-              >
-            </li>
-            <li class="header-nav-mobile__item">
-              <a class="header-nav-mobile__link" href="./portfolio.html"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="header-nav-mobile__item">
-              <a class="header-nav-mobile__link" href="/">Контакти</a>
-            </li>
-          </ul>
-          <ul class="header-contact-mobile">
-            <li class="header-contact-mobile__item">
-              <a
-                class="header-contact-mobile__link number"
-                href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-            <li class="header-contact-mobile__item">
-              <a
-                class="header-contact-mobile__link"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="mobile-menu__list">
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="/">Instagram</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="/">Twitter</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="/">Facebook</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="/">LinkedIn</a>
-            </li>
-          </ul>
+          <div class="proba">
+            <ul class="header-nav-mobile">
+              <li class="header-nav-mobile__item">
+                <a class="header-nav-mobile__link current" href="index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="header-nav-mobile__item">
+                <a class="header-nav-mobile__link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="header-nav-mobile__item">
+                <a class="header-nav-mobile__link" href="/">Контакти</a>
+              </li>
+            </ul>
+            <ul class="header-contact-mobile">
+              <li class="header-contact-mobile__item">
+                <a
+                  class="header-contact-mobile__link number"
+                  href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="header-contact-mobile__item">
+                <a
+                  class="header-contact-mobile__link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="/">Instagram</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="/">Twitter</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="/">Facebook</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="/">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -294,9 +297,14 @@
             <li class="employment__item">
               <div class="employment__group">
                 <img
-                  src="images/img.p1/box1.jpg"
+                  srcset="
+                    ./images/img.p1/employment/dekstop-370.jpg   370w,
+                    ./images/img.p1/employment/dekstop-740.jpg   740w,
+                    ./images/img.p1/employment/dekstop-1110.jpg 1110w
+                  "
                   alt="робота за комп'ютером"
-                  width="370"
+                  src="./images/img.p1/employment/dekstop-370.jpg"
+                  sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
                 />
                 <div class="employment__label">
                   <h3 class="label__tittle">Десктопні додатки</h3>
@@ -306,9 +314,14 @@
             <li class="employment__item">
               <div class="employment__group">
                 <img
-                  src="images/img.p1/box2.jpg"
-                  alt="робота з смартфоном"
-                  width="370"
+                  srcset="
+                    ./images/img.p1/employment/mobile-370.jpg   370w,
+                    ./images/img.p1/employment/mobile-740.jpg   740w,
+                    ./images/img.p1/employment/mobile-1110.jpg 1110w
+                  "
+                  alt="палітра кольорів"
+                  src="./images/img.p1/employment/mobile-370.jpg"
+                  sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
                 />
                 <div class="employment__label">
                   <h3 class="label__tittle">Мобільні додатки</h3>
@@ -318,9 +331,14 @@
             <li class="employment__item">
               <div class="employment__group">
                 <img
-                  src="images/img.p1/box3.jpg"
-                  alt="кольоровий спектр"
-                  width="370"
+                  srcset="
+                    ./images/img.p1/employment/designer-370.jpg   370w,
+                    ./images/img.p1/employment/designer-740.jpg   740w,
+                    ./images/img.p1/employment/designer-1110.jpg 1110w
+                  "
+                  alt="палітра кольорів"
+                  src="./images/img.p1/employment/designer-370.jpg"
+                  sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
                 />
                 <div class="employment__label">
                   <h3 class="label__tittle">Дизайнерські рішення</h3>
@@ -336,9 +354,14 @@
           <ul class="team-list">
             <li class="team-list__item">
               <img
-                src="images/img.p1/img.jpg"
+                srcset="
+                  ./images/img.p1/team/igor-270.jpg 270w,
+                  ./images/img.p1/team/igor-540.jpg 540w,
+                  ./images/img.p1/team/igor-810.jpg 810w
+                "
                 alt="фото працівника"
-                width="450"
+                src="./images/img.p1/team/igor-270.jpg"
+                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
               />
               <div class="team-list__card">
                 <p class="team-list__member">Ігор Дем'яненко</p>
@@ -384,9 +407,14 @@
             </li>
             <li class="team-list__item">
               <img
-                src="images/img.p1/img(1).jpg"
+                srcset="
+                  ./images/img.p1/team/olga-270.jpg 270w,
+                  ./images/img.p1/team/olga-540.jpg 540w,
+                  ./images/img.p1/team/olga-810.jpg 810w
+                "
                 alt="фото працівника"
-                width="450"
+                src="./images/img.p1/team/olga-270.jpg"
+                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
               />
               <div class="team-list__card">
                 <p class="team-list__member">Ольга Рєпіна</p>
@@ -431,9 +459,14 @@
             </li>
             <li class="team-list__item">
               <img
-                src="images/img.p1/img(2).jpg"
+                srcset="
+                  ./images/img.p1/team/mykola-270.jpg 270w,
+                  ./images/img.p1/team/mykola-540.jpg 540w,
+                  ./images/img.p1/team/mykola-810.jpg 810w
+                "
                 alt="фото працівника"
-                width="450"
+                src="./images/img.p1/team/mykola-270.jpg"
+                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
               />
               <div class="team-list__card">
                 <p class="team-list__member">Микола Тарасов</p>
@@ -478,9 +511,14 @@
             </li>
             <li class="team-list__item">
               <img
-                src="images/img.p1/img(3).jpg"
-                alt="фото праціівника"
-                width="450"
+                srcset="
+                  ./images/img.p1/team/mychaulo-270.jpg 270w,
+                  ./images/img.p1/team/mychaulo-540.jpg 540w,
+                  ./images/img.p1/team/mychaulo-810.jpg 810w
+                "
+                alt="фото працівника"
+                src="./images/img.p1/team/mychaulo-270.jpg"
+                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw,  100vw"
               />
               <div class="team-list__card">
                 <p class="team-list__member">Михайло Єрмаков</p>

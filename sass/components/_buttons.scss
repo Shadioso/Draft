@@ -14,8 +14,11 @@
   align-items: center;
   border-radius: 4px;
   height: 50px;
-  min-width: 200px;
+  min-width: auto;
   border: 1px solid transparent;
+  @media screen and (min-width: 250px) {
+    min-width: 200px;
+  }
   @media screen and(min-width:1200px) {
     min-width: 216px;
   }
